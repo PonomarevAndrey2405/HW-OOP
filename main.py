@@ -49,7 +49,9 @@ class Lecturer(Mentor):
         for k in self.grades:
             grades_count += len(self.grades[k])
         self.avg_rating = sum(map(sum, self.grades.values())) / grades_count
-        res = f'Имя: {self.name}\nФамилия: {self.surname}\nСредняя оценка за лекции: {self.avg_rating}'
+        res = f'Имя: {self.name}\n' \
+              f'Фамилия: {self.surname}\n' \
+              f'Средняя оценка за лекции: {self.avg_rating}'
         return res
 
 
